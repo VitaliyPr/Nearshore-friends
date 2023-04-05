@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BLog</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            if (pageWidth > 1900) {
+                document.documentElement.style.fontSize = '14px';
+            }else if (pageWidth > 992) {
+                let value = (pageWidth * 10 / 1366).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20230405174200"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20230405174200">
+
+
+
+</head>
+
+<body >
+
+  
+
+  <header class="header ">
+  <div class="header__container">
+    <a href="/" class="header__logo logo">
+      <img src="img/logo.svg" alt="" loading="lazy" class="img-full">
+    </a>
+    <div class="header__body">
+      <div class="header__menu menu" id="menu">
+  <ul id="menu-main_menu" class="">
+    <li class="menu-item menu-item-has-children">
+      <a href="javascript:;">Services</a>
+      <ul class="sub-menu">
+        <li class="menu-item ">
+          <a href="virtual-teams.html">Virtual Teams</a>
+        </li>
+        <li class="menu-item ">
+          <a href="nearshore-consulting.html">Nearshore Consulting</a>
+        </li>
+        <li class="menu-item ">
+          <a href="peak-resourses.html">Peak Resources</a>
+        </li>
+        <li class="menu-item ">
+          <a href="recruitment-and-relocation-services.html">Recruitment And Relocation Services</a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="about-us.html">About us</a>
+    </li>
+    <li class="menu-item">
+      <a href="#">References</a>
+    </li>
+    <li class="menu-item">
+      <a href="#">Technologies</a>
+    </li>
+    <li class="menu-item">
+      <a href="blog.html">Blog</a>
+    </li>
+    <li class="menu-item current-menu-item">
+      <a href="career.html">Career</a>
+    </li>
+  </ul>
+  <a href="#" class="menu__btn btn btn_dark">Contact us</a>
+</div>
+      <div class="header__lang lang">
+        <a class="lang-chose" href="#">
+          <img src="">
+        </a>
+        <ul>
+          <li class="lang-item current-lang">
+            <a href="#" hreflang="en-US">
+              <img src="img/gb.svg" alt="English" title="English" loading="lazy">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__btn" id="openbtn">
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <a href="#" class="header__contacts btn btn_dark btn_fat">Contact us</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+    <section class="top top_blog">
+  <div class="top__container">
+    <h2 class="top__title ttitle">NEARSHORE NEWS BLOG</h2>
+    <div class="top__subtitle subtitle">10+ YEARS OF EXPERIENCE IN MANAGING SOFTWARE DEVELOPMENT TEAMS IN ONE BLOG</div>
+  </div>
+  <div class="top__bg">
+    <img src="img/base/top-bg.png" alt="" loading="lazy" class="img-full">
+  </div>
+</section>
+    <section class="template">
+  <div class="template__container">
+    <div class="template-filter">
+      <div class="template-filter__top">
+        <div class="template-filter__search">
+          <input class="search" type="text" placeholder="Search">
+        </div>
+        <div class="template-filter__body">
+          <select name="" id="" class="template-filter__select select">
+            <option value="1">Categories</option>
+          </select>
+          <select name="" id="" class="template-filter__select select">
+            <option value="1">Date published</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="news">
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item1.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item2.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item3.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item4.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item5.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item6.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item7.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item8.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item5.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item6.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item7.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__item">
+        <div class="news-item__picture">
+          <img src="img/blog/news-item8.png" alt="" loading="lazy" class="img-full">
+        </div>
+        <div class="news-item__body">
+          <h4 class="news-item__title">All you need to know about team extention </h4>
+          <p class="news-item__p">Sometimes you just don’t have the time to manage a project yourself. In our project model</p>
+          <div class="news-item__info">
+            <div class="news-item__info-body">
+              <span>Published on:</span>
+              <p>12/03/23</p>
+            </div>
+            <div class="news-item__info-body">
+              <span>By:</span>
+              <img src="img/blog/author-img.png" alt="" loading="lazy">
+              <p>Taylor Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="template__btn">
+      <a href="#" class="btn btn_dark" id="more_news">View more</a>
+    </div>
+  </div>
+  <div class="template__bg">
+    <img src="img/base/template-bg.svg" alt="" loading="lazy" class="img-full">
+  </div>
+</section>
+   
+  </main>
+
+  <footer class="footer">
+  <div class="footer__top">
+    <a href="#" class="footer__logo logo">
+      <img src="img/logo.svg" alt="" loading="lazy" class="img-full">
+    </a>
+    <div class="footer__menu menu" id="menu">
+      <ul id="menu-main_menu" class="">
+        <li class="menu-item menu-item-has-children">
+          <a href="javascript:;">Services</a>
+          <ul class="sub-menu">
+            <li class="menu-item ">
+              <a href="#">Virtual Teams</a>
+            </li>
+            <li class="menu-item ">
+              <a href="#">Nearshore Consulting</a>
+            </li>
+            <li class="menu-item ">
+              <a href="#">Peak Resources</a>
+            </li>
+            <li class="menu-item ">
+              <a href="#">Recruitment And Relocation Services</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#">About us</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">References</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Technologies</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Career</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bot">
+    <p class="footer__copy">@Nearshorefriends All rights Reserved</p>
+  </div>
+</footer>
+  
+   <!-- END main page -->
+
+  <script src="js/plugins/plugins.min.js?_v=20230405174200"></script>
+
+<script src="js/app.min.js?_v=20230405174200"></script>
+ 
+</body>
+
+</html>
