@@ -844,6 +844,11 @@ svg {
           align-items: center;
 }
 
+.wwo-info__item-icon {
+  max-width: 3.5rem;
+  height: auto;
+}
+
 .wwo-info__item-title {
   font-size: 2rem;
   line-height: 400%;
@@ -888,6 +893,10 @@ svg {
   padding-bottom: 8.3rem;
 }
 
+.template__title:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
 .template__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,6 +914,10 @@ svg {
   position: absolute;
   left: 0;
   z-index: -1;
+}
+
+.template_main .template__container {
+  padding-top: 6rem;
 }
 
 .template-filter:not(:last-child) {
@@ -1276,6 +1289,10 @@ svg {
   margin-bottom: 6rem;
 }
 
+.it_rrs .it__title:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
 .wwd {
   position: relative;
 }
@@ -1367,6 +1384,11 @@ svg {
   width: 29.879rem;
   height: 15.506rem;
   padding: 0 5rem;
+}
+
+.wwd-body__item-icon {
+  width: auto;
+  max-height: 4rem;
 }
 
 .wwd-body__item-icon:not(:last-child) {
@@ -1487,10 +1509,7 @@ svg {
 }
 
 .techno {
-  background-image: url(../../../img/index/whyus-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
+  position: relative;
 }
 
 .techno__container {
@@ -1533,6 +1552,15 @@ svg {
   aspect-ratio: 3/2;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.techno__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .references {
@@ -2167,10 +2195,7 @@ svg {
 }
 
 .facts {
-  background-image: url("../../../img/about-us/facts-bg_mob.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
+  position: relative;
 }
 
 .facts__container {
@@ -2188,6 +2213,15 @@ svg {
   -ms-grid-columns: (1fr)[1];
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 3.2rem;
+}
+
+.facts__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .facts-item__icon {
@@ -2855,6 +2889,14 @@ svg {
     max-width: 105.6rem;
   }
 
+  .template__title {
+    text-align: center;
+  }
+
+  .template__title:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
   .template__btn {
     margin-top: 5.5rem;
   }
@@ -2863,6 +2905,10 @@ svg {
     width: auto;
     height: 103.4rem;
     top: 49.8rem;
+  }
+
+  .template_main .template__container {
+    padding-top: 15.5rem;
   }
 
   .template-filter:not(:last-child) {
@@ -3033,6 +3079,32 @@ svg {
 
   .it_pr .it__title:not(:last-child) {
     margin-bottom: 8rem;
+  }
+
+  .it_rrs .it__title:not(:last-child) {
+    margin-bottom: 10.1rem;
+  }
+
+  .it_rrs .it__industries {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 7rem;
+       -moz-column-gap: 7rem;
+            column-gap: 7rem;
+    row-gap: 8rem;
+  }
+
+  .it_rrs .industries__item {
+    width: 29rem;
   }
 
   .wwd__container {
@@ -3631,8 +3703,8 @@ svg {
     width: 30rem;
   }
 
-  .facts {
-    background-image: url("../../../img/about-us/facts-bg.png");
+  .facts_rrs .facts__container {
+    padding-top: 11rem;
   }
 
   .facts__container {
