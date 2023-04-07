@@ -741,18 +741,12 @@ svg {
 }
 
 .wwo__map {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 150%;
   height: 64.9rem;
 }
 
 .wwo__map:not(:last-child) {
   margin-bottom: 1.9rem;
-}
-
-.wwo__map svg {
-  display: block;
 }
 
 .wwo__item:not(:last-child) {
